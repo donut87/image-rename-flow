@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <!--
+    SPDX-FileCopyrightText: Christian Baer <donut87@gmail.com>
+    SPDX-License-Identifier: CC0-1.0
+    -->
+    <id>imagerename</id>
+    <name>Image Rename</name>
+    <summary>Rename Images starting with &quot;IMG&quot; to match the date they were created</summary>
+    <description><![CDATA[You cannot change the way iOS names images. All images start with IMG and a counter is added. If you store images from multiple sources in one folder (e.g. a shared family picture folder), there will be name collisions and nobody will be able to tell when the picture was taken just by looking at the file name.
+
+This plugin uses the meta information of a picture and changes the file name to something more useful.]]></description>
+    <version>0.0.1</version>
+    <licence>agpl</licence>
+    <author mail="donut87@gmail.com" >Christian Baer</author>
+    <namespace>ImageRename</namespace>
+    <category>files</category>
+    <category>workflow</category>
+    <bugs>https://github.com/donut87/image-rename-flow/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="27"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Image Rename</name>
+            <route>imagerename.page.index</route>
+        </navigation>
+    </navigations>
+</info>
